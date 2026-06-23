@@ -126,6 +126,7 @@ if menu != "Dashboard Dataset":
 if menu == "Cek Satu Ulasan":
     st.header("Cek Sentimen Satu Ulasan")
     st.write("Ketik atau tempel ulasan pengguna, lalu klik tombol analisis.")
+    st.caption("⚠️ Model ini hanya mengenali sentimen Positif atau Negatif (kelas Netral telah dieliminasi pada tahap pelabelan).")
 
     contoh = st.selectbox(
         "Atau pilih contoh ulasan:",
